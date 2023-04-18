@@ -1,0 +1,25 @@
+<div class="container mt-4" >
+    <div class="card">
+        <h1>Employee Registation</h1>
+<form>
+    <div class="form-group">
+      <label>name</label>
+      <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="form-control" id="name" placeholder="Enter Name">
+ 
+    </div>
+    <div class="form-group">
+        <label>address</label>
+        <input type="text" [(ngModel)]="address" [ngModelOptions]="{standalone: true}" class="form-control" id="address" placeholder="Enter address">
+   
+      </div>
+    
+      <div class="form-group">
+        <label>mobile</label>
+        <input type="text" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}" class="form-control" id="mobile" placeholder="Enter mobile">
+   
+      </div>
+    </form>
+    <button type="submit" class="btn btn-primary mt-4" (click)="save()" >Submit</button>
+  
+</div>
+<div>
